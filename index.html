@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geometry-genius-assignment</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="bg-blue-200 flex justify-between p-4" id="header">
+        <div id="text">
+          <h1>INTERACTIVE <br><span>GEOMETRY GENIUS</span></h1>
+        </div>
+        <div class="button">
+        <a href="question.html" class=" mr-3 mt-20 p-1 rounded bg-green-100 w-16" id="blog">Blog</a>
+        </div>   
+      </div>
+      <!-- all card design -->
+        <div id="all-card"  class=" w-3/4 grid grid-cols-3 gap-8 mt-6 relative"  >
+        <!-- triangle-card-design -->
+      <div class="border w-96 ml-4 " class="triangle-card" >
+          <div class="img">
+            <img class="my-4 ml-16 mt-" src="/images/triangle.png" alt="">
+            <h2 class="text-center text-xl font-bold">Triangle</h2>
+            <p class="text-center">Area(A)=0.5*b*h</p>
+          </div>
+            <div class="mt-4 text-center" class="">
+              <input id="trinagle-base-input" class="bg-blue-100 w-32" type="text" placeholder="B">
+              <p class="cm">cm</p>
+              <input id="triangle-height-input" class="bg-blue-100 w-32" type="text" placeholder="H">
+              <p class="cm">cm</p>
+            </div>
+            <div class="button"><button class="bg-green-200 p-2 w-60 rounded-xl mt-4 ml-16 mb-4" id="triangle-calculator" >Calculate</button>
+            </div>  
+      </div>
+    <!-- rectangle Card design -->
+    <div class="border w-96 ml-4" class="rectangle" >
+          <img class="my-4 ml-8 mt-8" src="/images/rectangle.png" alt="">
+          <h2 class="text-center text-xl font-bold">Rectangle</h2>
+          <p class="text-center">Area(A)=w*l</p>
+         <div class="mt-4 text-center" class="">
+          <input id="rectangle-width-input" class="bg-blue-100 w-32" type="text" placeholder="W">
+          <p class="cm">cm</p>
+          <input id="rectangle-lenth-input" class="bg-blue-100 w-32" type="text" placeholder="L">
+          <p class="cm">cm</p>
+        </div>
+        <button class="bg-green-200 p-2 w-60 rounded-xl mt-4 ml-16 mb-4" id="retangle-calculator" >Calculate</button>
+     </div>
+  
+     <!-- parallelogram -->
+     <div class="border w-96 ml-4 " class="rectangle" >
+      <img class="my-4 ml-8 mt-8" src="/images/parallelogram.png" alt="">
+      <h2 class="text-center text-xl font-bold">Paralleogram</h2>
+      <p class="text-center">Area(A)=b*h</p>
+     <div class="mt-4 text-center" class="">
+      <input id="parallelogram-base-input" class="bg-blue-100 w-32" type="text" placeholder="b">
+      <p class="cm">cm</p>
+      <input id="parallelogram-height-input" class="bg-blue-100 w-32" type="text" placeholder="h">
+      <p class="cm">cm</p>
+    </div>
+    <button class="bg-green-200 p-2 w-60 rounded-xl mt-4 ml-16 mb-4" id="parallelogram-calculator" >Calculate</button>
+  </div>
+      <!-- Rhombos card design -->
+        <div class="border w-96 ml-4" class="rectangle" >
+          <img class="my-4 ml-16 mt-8" src="/images/rhombus.png" alt="">
+          <h2 class="text-center text-xl font-bold">Rhombos</h2>
+          <p class="text-center">Area(A)=0.5*d<sub>1</sub>*d<sub>2</sub></p>
+        <div class="mt-4 text-center" class="">
+          <input id="rhombus-first-korno" class="bg-blue-100 w-32" type="text" placeholder="d1">
+          <p class="cm">cm</p>
+          <input id="rhombus-second-korno" class="bg-blue-100 w-32" type="text" placeholder="d2">
+          <p class="cm">cm</p>
+        </div>
+        <button class="bg-green-200 p-2 w-60 rounded-xl mt-4 ml-16 mb-4" id="retangle-calculator" >Calculate</button>
+      </div>
+        <!-- pentagon card design -->
+        <div class="border w-96 ml-4" class="pentagon" >
+          <img class="my-4 ml-24 mt-8" src="/images/pentagon.png" alt="">
+          <h2 class="text-center text-xl font-bold">pentagon</h2>
+          <p class="text-center">Area(A)=0.5*p*b></p>
+        <div class="mt-4 text-center" class="">
+          <h2>p=<span id="pentagon-p">6</span>cm,   b=<span id="pentagon-base">10</span>cm</h2>
+        </div>
+        <button class="bg-green-200 p-2 w-60 rounded-xl mt-4 ml-16 mb-4" id="pentagon-calculator" >Calculate</button>
+        </div>
+         <!-- elipse card design -->
+        <div class="border w-96 ml-4" class="ellipse" >
+          <img class="my-4 ml-12 mt-8" src="/images/ellipse.png" alt="">
+          <h2 class="text-center text-xl font-bold">ellipse</h2>
+          <p class="text-center">Area(A)=3.14*a*b</p>
+        <div class="mt-4 text-center" class="">
+          <h2>a=<span id="ellipse-largest-diameter">10</span>cm,   b=<span id="ellipse-shortest-diameter">4</span>cm</h2>
+        </div>
+        <button class="bg-green-200 p-2 w-60 rounded-xl mt-4 ml-16 mb-4" id="ellipse-calculator" >Calculate</button>
+        </div>
+    </div> 
+</body>
+</html>
