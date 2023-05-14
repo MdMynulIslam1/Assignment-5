@@ -7,6 +7,20 @@
     <title>Geometry-genius-assignment</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="index.css">
+    <style>
+      /* Extra small devices (phones, 600px and down) */
+      @media only screen and (max-width: 600px) {
+        #all-card{display: block;
+        margin-inline: auto;
+        position: relative;}
+        #result-area{
+        position: static;
+        left: 00px;
+        bottom: 10;}
+        #header{ display: block;
+          text-align: center; }
+      }
+      </style>
 </head>
 <body>
     <div class="bg-blue-200 flex justify-between p-4" id="header">
@@ -40,7 +54,7 @@
           <img class="my-4 ml-8 mt-8" src="rectangle.png" alt="">
           <h2 class="text-center text-xl font-bold">Rectangle</h2>
           <p class="text-center">Area(A)=w*l</p>
-         <div class="mt-4 flex justify-center" class="">
+         <div class="mt-4 flex justify-center" class="input-group">
           <input id="rectangle-width-input" class="bg-blue-100 w-32" type="text" placeholder="w">
           <p class="mx-2">cm</p>
           <input id="rectangle-lenth-input" class="bg-blue-100 w-32" type="text" placeholder="l">
@@ -50,11 +64,11 @@
      </div>
   
      <!-- parallelogram -->
-     <div class="border w-96 ml-4 " class="rectangle" >
+     <div class="border w-96 ml-4 " class="parallelogram" >
       <img class="my-4 ml-8 mt-8" src="parallelogram.png" alt="">
       <h2 class="text-center text-xl font-bold">Paralleogram</h2>
       <p class="text-center">Area(A)=b*h</p>
-     <div class="mt-4 flex justify-center " class="">
+     <div class="mt-4 flex justify-center " class="input-group">
       <input id="parallelogram-base-input" class="bg-blue-100 w-32 " type="text" placeholder="b">
       <p class="mx-2">cm</p>
       <input id="parallelogram-height-input" class="bg-blue-100 w-32" type="text" placeholder="h">
@@ -63,11 +77,11 @@
     <button class="bg-green-200 p-2 w-60 rounded-xl mt-4 ml-16 mb-4" id="parallelogram-calculator" >Calculate</button>
   </div>
       <!-- Rhombos card design -->
-        <div class="border w-96 ml-4" class="rectangle" >
+        <div class="border w-96 ml-4" class="Rhombos" >
           <img class="my-4 ml-16 mt-8" src="rhombus.png" alt="">
           <h2 class="text-center text-xl font-bold">Rhombos</h2>
           <p class="text-center">Area(A)=0.5*d<sub>1</sub>*d<sub>2</sub></p>
-        <div class="mt-4 flex justify-center" class="">
+        <div class="mt-4 flex justify-center" class="input-group">
           <input id="rhombus-first-korno" class="bg-blue-100 w-32" type="text" placeholder="d1">
           <p class="mx-2">cm</p>
           <input id="rhombus-second-korno" class="bg-blue-100 w-32" type="text" placeholder="d2">
